@@ -1,8 +1,9 @@
 import os
-import requests
-
-from flask import request
 from functools import wraps
+
+import requests
+from flask import request
+
 
 def check_login(func):
     @wraps(func)
